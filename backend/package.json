@@ -1,0 +1,15 @@
+{
+  "name": "vestingvault-backend",
+  "version": "1.0.0",
+  "description": "Token vesting and equity cliff management engine",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5"
+  }
+}

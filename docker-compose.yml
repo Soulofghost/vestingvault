@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  vestingvault:
+    build: .
+    ports:
+      - "4024:4024"
+    environment:
+      - NODE_ENV=production
+      - PORT=4024
+      - TOKEN_SYMBOL=VAULT
+    volumes:
+      - vestingvault_data:/app/backend/data
+    restart: unless-stopped
+
+volumes:
+  vestingvault_data:
